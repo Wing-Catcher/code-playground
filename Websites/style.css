@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("/Websites/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+    margin: 0px 90px;
+}
+
+#nav-container {
+    background-color: rgba(240, 255, 255, 0.363);
+    color: rgb(233, 233, 233);
+    display: flex;
+    padding: 20px 80px;
+    margin: 20px 0px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    #nav-title{
+        #title{
+            background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+            background-clip: text; /* Clip gradient to text */
+            -webkit-text-fill-color: transparent;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+    }
+
+    .nav-items{
+        display: flex;
+        gap: 20px;
+        button{
+            padding: 5.5px 10px;
+            border: none;
+            transition: all 0.1s ease-in-out;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(196, 248, 255);
+            transform: translateY(-3px);
+        }
+        #insta{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+}
+
+
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#project-list button {
+    padding: 5px 10px;
+    transition: all 0.1s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#project-list:hover button {
+    opacity: 0.3;
+}
+
+#project-list button:hover {
+    padding: 5px 20px;
+    transform: scale(1.2);
+    opacity: 1;
+}
